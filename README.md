@@ -50,7 +50,7 @@ These features are analyzed to understand their individual and combined impact o
 - **Linear, Decision Tree & Random Forest Regression**
 - **Classification Models (Optional)**
 
-## 📊 Key Methods
+## Key Methods
 
 ### 1. **Data Preprocessing**
 - Handled missing values
@@ -76,12 +76,26 @@ These features are analyzed to understand their individual and combined impact o
 
 ---
 
-## 📌 Insights
+## Insights
 
-- Identified top lifestyle and mental health factors influencing exam scores
-- Clustered students into lifestyle/mental health profiles
-- Found significant relationships and built predictive models
-- Offered data-driven recommendations for academic improvement
+Feature Importance:
+- For tree-based models, plot and analyze feature importance
+- For linear models, interpret coefficients
+- Identify the top 3–5 features that most affect performance
+
+Cluster Profiling
+- For each cluster:
+  - Describe common behaviors (e.g., “Cluster 1 sleeps less, studies more”)
+  - Associate average exam scores with each group
+  - Comment on trends you observe (e.g., does screen time correlate with lower scores?)
+
+Model Performance
+- Which model performed best? Why?
+- Are there trade-offs between interpretability and accuracy?
+
+Real-World Implications
+- What advice could you give students based on your findings?
+- Are there surprising or counterintuitive results?
 
 ---
 
