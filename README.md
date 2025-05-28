@@ -83,6 +83,34 @@ Feature Importance:
 - For linear models, interpret coefficients
 - Identify the top 3–5 features that most affect performance
 
+### Tree-based models (Decision Tree and Random Forest Regressors)
+
+Based on the Decision Tree and Random Forest regressors we trained earlier, the most significant lifestyle features affecting student performance were identified through the calculated feature importance scores. The analysis consistently highlights that:
+
+- **Study Hours per Day** emerged as the most influential predictor, positively associated with higher exam scores.
+- **Mental Health Rating** was another critical predictor, indicating that better mental health conditions strongly support improved academic performance.
+- **Attendance Percentage** also appeared significant, reinforcing the importance of regular class attendance in achieving higher scores.
+- **Sleep Hours** showed a notable impact, underscoring adequate rest as essential for optimal academic outcomes.
+- **Total Screen Time** negatively correlated with academic performance, indicating that excessive screen usage detracts from academic success.
+
+### Linear Regression Model
+
+The coefficients derived from our Linear Regression model revealed similar insights. Positive coefficients confirmed that increases in Study Hours per Day, Attendance Percentage, and Mental Health Rating are directly associated with higher exam scores. Conversely, negative coefficients for features like Total Screen Time emphasized their detrimental effect on academic performance.
+
+### Classification Task (Decision Tree Classifier and Logistic Regression)
+
+The classification task further validated these findings. The trained Decision Tree Classifier indicated that Study Hours per Day, Mental Health Rating, and Attendance Percentage were primary factors distinguishing students in the "High," "Average," and "Low" performance categories. Similarly, Logistic Regression coefficients reinforced these findings, consistently identifying these features as major determinants of academic success.
+
+### Summary
+
+The cumulative analysis of regression and classification models consistently pinpointed the following as the most impactful lifestyle features:
+
+- **Study Hours per Day**
+- **Mental Health Rating**
+- **Attendance Percentage**
+- **Sleep Hours**
+- **Total Screen Time**
+
 --
 
 Cluster Profiling
@@ -154,7 +182,7 @@ To explore how lifestyle habits and mental health relate to academic performance
 
 ---
 
-### Conclusion
+### Summary
 
 Both K = 3 and K = 4 offer valuable behavioral insights:
 - Use **K = 3** for a quick overview.
@@ -164,17 +192,27 @@ This clustering supports educators and advisors in identifying which student gro
 
 ---
 
---
-
 Model Performance
 - Which model performed best? Why?
 - Are there trade-offs between interpretability and accuracy?
 
---
+### Which model performed best? Why?
+  - Linear Regression performed best because the relationship between lifestyle factors (like study hours, sleep, and screen time) and exam scores was mostly linear, which means changes in these habits led to consistent changes in performance. The model accurately captured these patterns without overfitting due to clean data preprocessing and well-chosen features. Its simplicity made it both effective and easy to interpret compared with other models.
+
+### Are there trade-offs between interpretability and accuracy?
+  - Linear regression is highly interpretable as it clearly shows how each lifestyle factor impacts exam scores, but more complex models like random forest or decision tree may offer slightly better accuracy by capturing non-linear relationships. However, these models are harder to interpret, especially when understanding the specific influence of each feature. Hence, while complex models may improve predictive performance, they sacrifice the transparency that linear regression provides.
+
+---
 
 Real-World Implications
 - What advice could you give students based on your findings?
 - Are there surprising or counterintuitive results?
+
+### What advice could you give students based on your findings?
+  - Based on the findings, those students with high study hours, and attends classes frequently performs well in exams. Therefore, spending more time in studying and attending classes regularly can affect exam scores positively.
+
+### Are there surprising or counterintuitive results?
+  - Based on the clustering, screen time doesn't have any affect on exam scores. It showed that some students with high screen time hours, also have high exam scores which is a surprise since it is expected that students who spend more time on their electronic gadgets to have low scores as it can be a distraction to studying. However, based on regression, it is negatively correlated with academic performance, indicating that excessive screen usage detracts from academic success.
 
 ---
 
