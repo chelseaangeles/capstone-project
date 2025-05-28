@@ -83,15 +83,94 @@ Feature Importance:
 - For linear models, interpret coefficients
 - Identify the top 3–5 features that most affect performance
 
+--
+
 Cluster Profiling
 - For each cluster:
   - Describe common behaviors (e.g., “Cluster 1 sleeps less, studies more”)
   - Associate average exam scores with each group
   - Comment on trends you observe (e.g., does screen time correlate with lower scores?)
 
+### Cluster Analysis Report – Student Lifestyle and Performance
+
+**Objective**
+
+To explore how lifestyle habits and mental health relate to academic performance using K-Means clustering. Two models were evaluated using **K = 3** and **K = 4** cluster groups based on features like study time, screen time, sleep, attendance, and mental health.
+
+---
+
+***Clustering Summary***
+
+| K | Clusters | Purpose |
+|---|----------|---------|
+| 3 | Broader lifestyle groupings | Quick insights with minimal segmentation |
+| 4 | Finer differentiation | Deeper behavioral profiling |
+
+---
+
+### K = 3 Cluster Analysis
+
+***Cluster Descriptions***
+
+| Cluster | Key Behaviors | Attendance (%) | Mental Health | Exam Score | Interpretation |
+|--------|----------------|----------------|----------------|-------------|----------------|
+| **0** | Moderate sleep, average screen time, low attendance | 71.6 | 5.55 | **67.67** | Possibly disengaged or inconsistent performers |
+| **1** | High study hours, **highest attendance**, **highest screen time** | 95.3 | 5.48 | **71.55** | **Top performers** – strong academic discipline offsets distractions |
+| **2** | Balanced habits, **least sleep**, low mental health | 83.7 | 5.36 | **69.39** | Healthy intentions, but **stress or fatigue may limit outcomes** |
+
+***Trends Observed (K = 3)***
+
+- **Attendance** is the most consistent predictor of academic success.
+- **High screen time** doesn't always mean poor performance when paired with strong study habits.
+- **Mental health** plays a moderating role, especially in Cluster 2.
+
+---
+
+### K = 4 Cluster Analysis
+
+***Cluster Descriptions***
+
+| Cluster | Key Behaviors | Attendance (%) | Mental Health | Exam Score | Interpretation |
+|--------|----------------|----------------|----------------|-------------|----------------|
+| **0** | Moderate habits, lowest mental health | 79.8 | **5.26** | **67.85** | Lower scores may be linked to emotional strain |
+| **1** | **Highest study time and attendance**, highest screen time | **97.3** | 5.37 | **72.03** | **High achievers** – academically driven |
+| **2** | Best sleep, best mental health, balanced habits | 88.0 | **5.60** | **70.70** | **Well-rounded performers** |
+| **3** | Healthy lifestyle, **lowest attendance** | 69.1 | 5.59 | **68.10** | **High potential, underperforming** due to disengagement |
+
+***Trends Observed (K = 4)***
+
+- **Mental health** was highest in Cluster 2 and second highest in Cluster 3, both with good lifestyle habits.
+- **Cluster 1 succeeded despite highest screen time** — showing that academic consistency matters more than screen habits.
+- **Cluster 3 underperformed** mainly due to **poor class attendance**, not poor health or habits.
+
+---
+
+### Key Insights
+
+- **Attendance is the strongest predictor of academic performance** across both models.
+- **Good habits alone are not enough** — they must be paired with consistent engagement.
+- **Mental health enhances** the benefits of good lifestyle habits, especially in well-balanced clusters.
+- Screen time **is not inherently harmful** if the student has strong academic routines.
+
+---
+
+### Conclusion
+
+Both K = 3 and K = 4 offer valuable behavioral insights:
+- Use **K = 3** for a quick overview.
+- Use **K = 4** for detailed profiling, especially in interventions or targeted support.
+
+This clustering supports educators and advisors in identifying which student groups may benefit most from academic or mental health support.
+
+---
+
+--
+
 Model Performance
 - Which model performed best? Why?
 - Are there trade-offs between interpretability and accuracy?
+
+--
 
 Real-World Implications
 - What advice could you give students based on your findings?
