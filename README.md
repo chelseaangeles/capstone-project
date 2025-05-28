@@ -12,7 +12,7 @@ This project explores how student lifestyle habits and mental health status infl
 
 ---
 
-### 🧠 Project Overview
+### Project Overview
 
 The dataset includes variables like:
 
@@ -85,7 +85,7 @@ These features are analyzed to understand their individual and combined impact o
 
 ---
 
-## 📽️ Presentation
+## Presentation
 
 Youtube Video Link: [TEECE 2 Capstone Project](https://www.youtube.com/)
 
@@ -97,20 +97,20 @@ A 10-minute recorded video includes:
 
 ---
 
-## 📜 License
+## License
 
 This project is for academic and educational purposes only.
 
 ---
 
-## 👤 Author/s
+## Author/s
 
 - **Name:** *Chelsea R. Angeles | Adelyn Joyce S. Soriano | Rychard Andrei Reyes*
 - **University:** *Technological University of the Philippines*
 
 ---
 
-## 📎 References
+## References
 
 - Dataset Source: [Student Habits Dataset](https://docs.google.com/spreadsheets/d/1qXURK359eUjom2M7R8Zh2XALFt3EuS1s/edit?rtpof=true&gid=744158941#gid=744158941)
 
