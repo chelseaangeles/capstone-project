@@ -218,7 +218,7 @@ Real-World Implications
 
 ## Presentation
 
-Youtube Video Link: [TEECE 2 Capstone Project](https://www.youtube.com/)
+Youtube Video Link: [TEECE 2 Capstone Project](https://www.youtube.com/watch?v=Kwe_8tUQNRI)
 
 A 10-minute recorded video includes:
 - Overview of the research question and goals
